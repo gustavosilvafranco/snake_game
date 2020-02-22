@@ -35,9 +35,8 @@ class Snake:
             self.x_pos += 10
 
         self.draw()
-        game_over = self.check_if_game_over()
-        return game_over if game_over else False
-
+        return self.check_if_game_over()
+    
     def __str__(self):
         return f"Snake [{self.x_pos}, {self.y_pos}]"
 
